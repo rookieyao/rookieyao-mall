@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.UmsAdminMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.UmsAdmin">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.UmsAdmin">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="username" jdbcType="VARCHAR" property="username"/>
         <result column="password" jdbcType="VARCHAR" property="password"/>
@@ -76,7 +76,7 @@
     <sql id="Base_Column_List">
         id, username, password, icon, email, nick_name, note, create_time, login_time, status
     </sql>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.UmsAdminExample" resultMap="BaseResultMap">
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.UmsAdminExample" resultMap="BaseResultMap">
         select
         <if test="distinct">
             distinct
@@ -100,13 +100,13 @@
         delete from ums_admin
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.UmsAdminExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.UmsAdminExample">
         delete from ums_admin
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.UmsAdmin">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.UmsAdmin">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -119,7 +119,7 @@
         #{createTime,jdbcType=TIMESTAMP}, #{loginTime,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}
         )
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.UmsAdmin">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.UmsAdmin">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -183,7 +183,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.UmsAdminExample" resultType="java.lang.Long">
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.UmsAdminExample" resultType="java.lang.Long">
         select count(*) from ums_admin
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
@@ -243,7 +243,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.UmsAdmin">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.UmsAdmin">
         update ums_admin
         <set>
             <if test="username != null">
@@ -276,7 +276,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.UmsAdmin">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.UmsAdmin">
         update ums_admin
         set username = #{username,jdbcType=VARCHAR},
         password = #{password,jdbcType=VARCHAR},

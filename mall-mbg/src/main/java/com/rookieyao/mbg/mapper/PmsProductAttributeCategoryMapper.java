@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.PmsProductAttributeCategory;
-import com.rookieyao.mall.model.PmsProductAttributeCategoryExample;
+import com.rookieyao.mbg.model.PmsProductAttributeCategory;
+import com.rookieyao.mbg.model.PmsProductAttributeCategoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

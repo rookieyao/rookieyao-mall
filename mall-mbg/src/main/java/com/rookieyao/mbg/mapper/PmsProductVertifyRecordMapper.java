@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.PmsProductVertifyRecord;
-import com.rookieyao.mall.model.PmsProductVertifyRecordExample;
+import com.rookieyao.mbg.model.PmsProductVertifyRecord;
+import com.rookieyao.mbg.model.PmsProductVertifyRecordExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

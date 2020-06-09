@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.UmsAdminPermissionRelation;
-import com.rookieyao.mall.model.UmsAdminPermissionRelationExample;
+import com.rookieyao.mbg.model.UmsAdminPermissionRelation;
+import com.rookieyao.mbg.model.UmsAdminPermissionRelationExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

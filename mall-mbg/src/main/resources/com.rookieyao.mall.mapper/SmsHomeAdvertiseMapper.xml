@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.SmsHomeAdvertiseMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.SmsHomeAdvertise">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.SmsHomeAdvertise">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="type" jdbcType="INTEGER" property="type"/>
@@ -79,7 +79,7 @@
         id, name, type, pic, start_time, end_time, status, click_count, order_count, url,
         note, sort
     </sql>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.SmsHomeAdvertiseExample" resultMap="BaseResultMap">
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.SmsHomeAdvertiseExample" resultMap="BaseResultMap">
         select
         <if test="distinct">
             distinct
@@ -103,13 +103,13 @@
         delete from sms_home_advertise
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.SmsHomeAdvertiseExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.SmsHomeAdvertiseExample">
         delete from sms_home_advertise
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.SmsHomeAdvertise">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.SmsHomeAdvertise">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -122,7 +122,7 @@
         #{clickCount,jdbcType=INTEGER}, #{orderCount,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR},
         #{note,jdbcType=VARCHAR}, #{sort,jdbcType=INTEGER})
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.SmsHomeAdvertise">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.SmsHomeAdvertise">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -198,7 +198,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.SmsHomeAdvertiseExample"
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.SmsHomeAdvertiseExample"
             resultType="java.lang.Long">
         select count(*) from sms_home_advertise
         <if test="_parameter != null">
@@ -267,7 +267,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.SmsHomeAdvertise">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.SmsHomeAdvertise">
         update sms_home_advertise
         <set>
             <if test="name != null">
@@ -306,7 +306,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.SmsHomeAdvertise">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.SmsHomeAdvertise">
         update sms_home_advertise
         set name = #{name,jdbcType=VARCHAR},
         type = #{type,jdbcType=INTEGER},

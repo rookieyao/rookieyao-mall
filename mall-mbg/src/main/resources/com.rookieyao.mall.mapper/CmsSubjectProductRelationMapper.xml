@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.CmsSubjectProductRelationMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.CmsSubjectProductRelation">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.CmsSubjectProductRelation">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="subject_id" jdbcType="BIGINT" property="subjectId"/>
         <result column="product_id" jdbcType="BIGINT" property="productId"/>
@@ -69,7 +69,7 @@
     <sql id="Base_Column_List">
         id, subject_id, product_id
     </sql>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.CmsSubjectProductRelationExample"
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.CmsSubjectProductRelationExample"
             resultMap="BaseResultMap">
         select
         <if test="distinct">
@@ -94,20 +94,20 @@
         delete from cms_subject_product_relation
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.CmsSubjectProductRelationExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.CmsSubjectProductRelationExample">
         delete from cms_subject_product_relation
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.CmsSubjectProductRelation">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.CmsSubjectProductRelation">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into cms_subject_product_relation (subject_id, product_id)
         values (#{subjectId,jdbcType=BIGINT}, #{productId,jdbcType=BIGINT})
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.CmsSubjectProductRelation">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.CmsSubjectProductRelation">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -129,7 +129,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.CmsSubjectProductRelationExample"
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.CmsSubjectProductRelationExample"
             resultType="java.lang.Long">
         select count(*) from cms_subject_product_relation
         <if test="_parameter != null">
@@ -162,7 +162,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.CmsSubjectProductRelation">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.CmsSubjectProductRelation">
         update cms_subject_product_relation
         <set>
             <if test="subjectId != null">
@@ -174,7 +174,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.CmsSubjectProductRelation">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.CmsSubjectProductRelation">
         update cms_subject_product_relation
         set subject_id = #{subjectId,jdbcType=BIGINT},
         product_id = #{productId,jdbcType=BIGINT}

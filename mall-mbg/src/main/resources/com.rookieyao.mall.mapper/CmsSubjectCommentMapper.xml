@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.CmsSubjectCommentMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.CmsSubjectComment">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.CmsSubjectComment">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="subject_id" jdbcType="BIGINT" property="subjectId"/>
         <result column="member_nick_name" jdbcType="VARCHAR" property="memberNickName"/>
@@ -73,7 +73,7 @@
     <sql id="Base_Column_List">
         id, subject_id, member_nick_name, member_icon, content, create_time, show_status
     </sql>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.CmsSubjectCommentExample"
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.CmsSubjectCommentExample"
             resultMap="BaseResultMap">
         select
         <if test="distinct">
@@ -98,13 +98,13 @@
         delete from cms_subject_comment
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.CmsSubjectCommentExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.CmsSubjectCommentExample">
         delete from cms_subject_comment
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.CmsSubjectComment">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.CmsSubjectComment">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -115,7 +115,7 @@
         #{content,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{showStatus,jdbcType=INTEGER}
         )
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.CmsSubjectComment">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.CmsSubjectComment">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -161,7 +161,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.CmsSubjectCommentExample"
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.CmsSubjectCommentExample"
             resultType="java.lang.Long">
         select count(*) from cms_subject_comment
         <if test="_parameter != null">
@@ -210,7 +210,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.CmsSubjectComment">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.CmsSubjectComment">
         update cms_subject_comment
         <set>
             <if test="subjectId != null">
@@ -234,7 +234,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.CmsSubjectComment">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.CmsSubjectComment">
         update cms_subject_comment
         set subject_id = #{subjectId,jdbcType=BIGINT},
         member_nick_name = #{memberNickName,jdbcType=VARCHAR},

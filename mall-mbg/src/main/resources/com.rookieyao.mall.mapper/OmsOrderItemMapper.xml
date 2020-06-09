@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.OmsOrderItemMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.OmsOrderItem">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.OmsOrderItem">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="order_id" jdbcType="BIGINT" property="orderId"/>
         <result column="order_sn" jdbcType="VARCHAR" property="orderSn"/>
@@ -90,7 +90,7 @@
         promotion_name, promotion_amount, coupon_amount, integration_amount, real_amount,
         gift_integration, gift_growth, product_attr
     </sql>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.OmsOrderItemExample" resultMap="BaseResultMap">
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.OmsOrderItemExample" resultMap="BaseResultMap">
         select
         <if test="distinct">
             distinct
@@ -114,13 +114,13 @@
         delete from oms_order_item
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.OmsOrderItemExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.OmsOrderItemExample">
         delete from oms_order_item
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.OmsOrderItem">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.OmsOrderItem">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -139,7 +139,7 @@
         #{integrationAmount,jdbcType=DECIMAL}, #{realAmount,jdbcType=DECIMAL}, #{giftIntegration,jdbcType=INTEGER},
         #{giftGrowth,jdbcType=INTEGER}, #{productAttr,jdbcType=VARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.OmsOrderItem">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.OmsOrderItem">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -269,7 +269,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.OmsOrderItemExample" resultType="java.lang.Long">
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.OmsOrderItemExample" resultType="java.lang.Long">
         select count(*) from oms_order_item
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
@@ -373,7 +373,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.OmsOrderItem">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.OmsOrderItem">
         update oms_order_item
         <set>
             <if test="orderId != null">
@@ -439,7 +439,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.OmsOrderItem">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.OmsOrderItem">
         update oms_order_item
         set order_id = #{orderId,jdbcType=BIGINT},
         order_sn = #{orderSn,jdbcType=VARCHAR},

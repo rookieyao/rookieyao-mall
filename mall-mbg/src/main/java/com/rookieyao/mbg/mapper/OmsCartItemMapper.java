@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.OmsCartItem;
-import com.rookieyao.mall.model.OmsCartItemExample;
+import com.rookieyao.mbg.model.OmsCartItem;
+import com.rookieyao.mbg.model.OmsCartItemExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

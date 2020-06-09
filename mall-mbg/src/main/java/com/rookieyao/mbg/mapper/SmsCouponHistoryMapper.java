@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.SmsCouponHistory;
-import com.rookieyao.mall.model.SmsCouponHistoryExample;
+import com.rookieyao.mbg.model.SmsCouponHistory;
+import com.rookieyao.mbg.model.SmsCouponHistoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

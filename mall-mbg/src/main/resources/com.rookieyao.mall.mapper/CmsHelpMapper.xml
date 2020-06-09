@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.CmsHelpMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.CmsHelp">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.CmsHelp">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="category_id" jdbcType="BIGINT" property="categoryId"/>
         <result column="icon" jdbcType="VARCHAR" property="icon"/>
@@ -10,7 +10,7 @@
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="read_count" jdbcType="INTEGER" property="readCount"/>
     </resultMap>
-    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.rookieyao.mall.model.CmsHelp">
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.rookieyao.mbg.model.CmsHelp">
         <result column="content" jdbcType="LONGVARCHAR" property="content"/>
     </resultMap>
     <sql id="Example_Where_Clause">
@@ -79,7 +79,7 @@
     <sql id="Blob_Column_List">
         content
     </sql>
-    <select id="selectByExampleWithBLOBs" parameterType="com.rookieyao.mall.model.CmsHelpExample"
+    <select id="selectByExampleWithBLOBs" parameterType="com.rookieyao.mbg.model.CmsHelpExample"
             resultMap="ResultMapWithBLOBs">
         select
         <if test="distinct">
@@ -96,7 +96,7 @@
             order by ${orderByClause}
         </if>
     </select>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.CmsHelpExample" resultMap="BaseResultMap">
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.CmsHelpExample" resultMap="BaseResultMap">
         select
         <if test="distinct">
             distinct
@@ -122,13 +122,13 @@
         delete from cms_help
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.CmsHelpExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.CmsHelpExample">
         delete from cms_help
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.CmsHelp">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.CmsHelp">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -139,7 +139,7 @@
         #{showStatus,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{readCount,jdbcType=INTEGER},
         #{content,jdbcType=LONGVARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.CmsHelp">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.CmsHelp">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -191,7 +191,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.CmsHelpExample" resultType="java.lang.Long">
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.CmsHelpExample" resultType="java.lang.Long">
         select count(*) from cms_help
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
@@ -256,7 +256,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.CmsHelp">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.CmsHelp">
         update cms_help
         <set>
             <if test="categoryId != null">
@@ -283,7 +283,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.rookieyao.mall.model.CmsHelp">
+    <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.rookieyao.mbg.model.CmsHelp">
         update cms_help
         set category_id = #{categoryId,jdbcType=BIGINT},
         icon = #{icon,jdbcType=VARCHAR},
@@ -294,7 +294,7 @@
         content = #{content,jdbcType=LONGVARCHAR}
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.CmsHelp">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.CmsHelp">
         update cms_help
         set category_id = #{categoryId,jdbcType=BIGINT},
         icon = #{icon,jdbcType=VARCHAR},

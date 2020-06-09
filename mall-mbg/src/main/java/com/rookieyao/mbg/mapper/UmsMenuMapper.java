@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.UmsMenu;
-import com.rookieyao.mall.model.UmsMenuExample;
+import com.rookieyao.mbg.model.UmsMenu;
+import com.rookieyao.mbg.model.UmsMenuExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

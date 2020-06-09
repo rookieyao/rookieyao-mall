@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.UmsIntegrationChangeHistory;
-import com.rookieyao.mall.model.UmsIntegrationChangeHistoryExample;
+import com.rookieyao.mbg.model.UmsIntegrationChangeHistory;
+import com.rookieyao.mbg.model.UmsIntegrationChangeHistoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

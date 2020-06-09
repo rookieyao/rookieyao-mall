@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.SmsHomeRecommendProductMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.SmsHomeRecommendProduct">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.SmsHomeRecommendProduct">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="product_id" jdbcType="BIGINT" property="productId"/>
         <result column="product_name" jdbcType="VARCHAR" property="productName"/>
@@ -71,7 +71,7 @@
     <sql id="Base_Column_List">
         id, product_id, product_name, recommend_status, sort
     </sql>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.SmsHomeRecommendProductExample"
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.SmsHomeRecommendProductExample"
             resultMap="BaseResultMap">
         select
         <if test="distinct">
@@ -96,13 +96,13 @@
         delete from sms_home_recommend_product
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.SmsHomeRecommendProductExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.SmsHomeRecommendProductExample">
         delete from sms_home_recommend_product
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.SmsHomeRecommendProduct">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.SmsHomeRecommendProduct">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -111,7 +111,7 @@
         values (#{productId,jdbcType=BIGINT}, #{productName,jdbcType=VARCHAR}, #{recommendStatus,jdbcType=INTEGER},
         #{sort,jdbcType=INTEGER})
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.SmsHomeRecommendProduct">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.SmsHomeRecommendProduct">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -145,7 +145,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.SmsHomeRecommendProductExample"
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.SmsHomeRecommendProductExample"
             resultType="java.lang.Long">
         select count(*) from sms_home_recommend_product
         <if test="_parameter != null">
@@ -186,7 +186,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.SmsHomeRecommendProduct">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.SmsHomeRecommendProduct">
         update sms_home_recommend_product
         <set>
             <if test="productId != null">
@@ -204,7 +204,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.SmsHomeRecommendProduct">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.SmsHomeRecommendProduct">
         update sms_home_recommend_product
         set product_id = #{productId,jdbcType=BIGINT},
         product_name = #{productName,jdbcType=VARCHAR},

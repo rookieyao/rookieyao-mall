@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.OmsCompanyAddress;
-import com.rookieyao.mall.model.OmsCompanyAddressExample;
+import com.rookieyao.mbg.model.OmsCompanyAddress;
+import com.rookieyao.mbg.model.OmsCompanyAddressExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

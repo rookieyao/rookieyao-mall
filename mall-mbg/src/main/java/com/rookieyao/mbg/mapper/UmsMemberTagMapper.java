@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.UmsMemberTag;
-import com.rookieyao.mall.model.UmsMemberTagExample;
+import com.rookieyao.mbg.model.UmsMemberTag;
+import com.rookieyao.mbg.model.UmsMemberTagExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

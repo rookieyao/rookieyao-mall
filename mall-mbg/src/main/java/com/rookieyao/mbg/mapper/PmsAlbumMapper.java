@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.PmsAlbum;
-import com.rookieyao.mall.model.PmsAlbumExample;
+import com.rookieyao.mbg.model.PmsAlbum;
+import com.rookieyao.mbg.model.PmsAlbumExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

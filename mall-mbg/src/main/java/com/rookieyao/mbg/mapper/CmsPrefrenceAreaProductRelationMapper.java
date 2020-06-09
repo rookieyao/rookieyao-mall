@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.CmsPrefrenceAreaProductRelation;
-import com.rookieyao.mall.model.CmsPrefrenceAreaProductRelationExample;
+import com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelation;
+import com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelationExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

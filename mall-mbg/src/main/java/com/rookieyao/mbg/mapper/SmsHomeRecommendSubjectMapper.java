@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.SmsHomeRecommendSubject;
-import com.rookieyao.mall.model.SmsHomeRecommendSubjectExample;
+import com.rookieyao.mbg.model.SmsHomeRecommendSubject;
+import com.rookieyao.mbg.model.SmsHomeRecommendSubjectExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

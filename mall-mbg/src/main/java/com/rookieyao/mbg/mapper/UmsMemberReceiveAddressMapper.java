@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.UmsMemberReceiveAddress;
-import com.rookieyao.mall.model.UmsMemberReceiveAddressExample;
+import com.rookieyao.mbg.model.UmsMemberReceiveAddress;
+import com.rookieyao.mbg.model.UmsMemberReceiveAddressExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

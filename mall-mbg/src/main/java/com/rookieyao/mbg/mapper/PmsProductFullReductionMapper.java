@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.PmsProductFullReduction;
-import com.rookieyao.mall.model.PmsProductFullReductionExample;
+import com.rookieyao.mbg.model.PmsProductFullReduction;
+import com.rookieyao.mbg.model.PmsProductFullReductionExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

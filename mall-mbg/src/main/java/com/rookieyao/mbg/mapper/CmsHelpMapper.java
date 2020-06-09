@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.CmsHelp;
-import com.rookieyao.mall.model.CmsHelpExample;
+import com.rookieyao.mbg.model.CmsHelp;
+import com.rookieyao.mbg.model.CmsHelpExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.CmsTopicComment;
-import com.rookieyao.mall.model.CmsTopicCommentExample;
+import com.rookieyao.mbg.model.CmsTopicComment;
+import com.rookieyao.mbg.model.CmsTopicCommentExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

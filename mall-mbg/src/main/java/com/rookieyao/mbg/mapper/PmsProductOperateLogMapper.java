@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.PmsProductOperateLog;
-import com.rookieyao.mall.model.PmsProductOperateLogExample;
+import com.rookieyao.mbg.model.PmsProductOperateLog;
+import com.rookieyao.mbg.model.PmsProductOperateLogExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.UmsAdminLoginLog;
-import com.rookieyao.mall.model.UmsAdminLoginLogExample;
+import com.rookieyao.mbg.model.UmsAdminLoginLog;
+import com.rookieyao.mbg.model.UmsAdminLoginLogExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

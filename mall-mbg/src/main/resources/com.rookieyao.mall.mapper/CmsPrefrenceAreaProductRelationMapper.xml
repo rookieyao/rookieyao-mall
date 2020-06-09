@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.mall.mapper.CmsPrefrenceAreaProductRelationMapper">
-    <resultMap id="BaseResultMap" type="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelation">
+    <resultMap id="BaseResultMap" type="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelation">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="prefrence_area_id" jdbcType="BIGINT" property="prefrenceAreaId"/>
         <result column="product_id" jdbcType="BIGINT" property="productId"/>
@@ -69,7 +69,7 @@
     <sql id="Base_Column_List">
         id, prefrence_area_id, product_id
     </sql>
-    <select id="selectByExample" parameterType="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelationExample"
+    <select id="selectByExample" parameterType="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelationExample"
             resultMap="BaseResultMap">
         select
         <if test="distinct">
@@ -94,20 +94,20 @@
         delete from cms_prefrence_area_product_relation
         where id = #{id,jdbcType=BIGINT}
     </delete>
-    <delete id="deleteByExample" parameterType="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelationExample">
+    <delete id="deleteByExample" parameterType="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelationExample">
         delete from cms_prefrence_area_product_relation
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelation">
+    <insert id="insert" parameterType="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelation">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into cms_prefrence_area_product_relation (prefrence_area_id, product_id)
         values (#{prefrenceAreaId,jdbcType=BIGINT}, #{productId,jdbcType=BIGINT})
     </insert>
-    <insert id="insertSelective" parameterType="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelation">
+    <insert id="insertSelective" parameterType="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelation">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -129,7 +129,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelationExample"
+    <select id="countByExample" parameterType="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelationExample"
             resultType="java.lang.Long">
         select count(*) from cms_prefrence_area_product_relation
         <if test="_parameter != null">
@@ -162,7 +162,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelation">
+    <update id="updateByPrimaryKeySelective" parameterType="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelation">
         update cms_prefrence_area_product_relation
         <set>
             <if test="prefrenceAreaId != null">
@@ -174,7 +174,7 @@
         </set>
         where id = #{id,jdbcType=BIGINT}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mall.model.CmsPrefrenceAreaProductRelation">
+    <update id="updateByPrimaryKey" parameterType="com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelation">
         update cms_prefrence_area_product_relation
         set prefrence_area_id = #{prefrenceAreaId,jdbcType=BIGINT},
         product_id = #{productId,jdbcType=BIGINT}

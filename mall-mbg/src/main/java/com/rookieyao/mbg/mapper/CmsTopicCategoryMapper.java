@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.CmsTopicCategory;
-import com.rookieyao.mall.model.CmsTopicCategoryExample;
+import com.rookieyao.mbg.model.CmsTopicCategory;
+import com.rookieyao.mbg.model.CmsTopicCategoryExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

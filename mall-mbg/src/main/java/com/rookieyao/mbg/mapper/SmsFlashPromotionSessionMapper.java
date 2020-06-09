@@ -1,7 +1,7 @@
 package com.rookieyao.mbg.mapper;
 
-import com.rookieyao.mall.model.SmsFlashPromotionSession;
-import com.rookieyao.mall.model.SmsFlashPromotionSessionExample;
+import com.rookieyao.mbg.model.SmsFlashPromotionSession;
+import com.rookieyao.mbg.model.SmsFlashPromotionSessionExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

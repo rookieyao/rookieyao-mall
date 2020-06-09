@@ -3,7 +3,7 @@ package com.rookieyao.admin.controller;
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.SmsCouponHistory;
-import com.rookieyao.mbg.SmsCouponHistoryService;
+import com.rookieyao.admin.service.SmsCouponHistoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * 优惠券领取记录管理Controller
- * Created by macro on 2018/11/6.
+ * Created by rookieyao on 2018/11/6.
  */
 @Controller
 @Api(tags = "SmsCouponHistoryController", description = "优惠券领取记录管理")

@@ -12,13 +12,13 @@ import org.springframework.validation.FieldError;
 
 /**
  * HibernateValidator错误结果处理切面
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Aspect
 @Component
 @Order(2)
 public class BindingResultAspect {
-    @Pointcut("execution(public * com.rookieyao.controller.*.*(..))")
+    @Pointcut("execution(public * com.macro.mall.controller.*.*(..))")
     public void BindingResult() {
     }
 

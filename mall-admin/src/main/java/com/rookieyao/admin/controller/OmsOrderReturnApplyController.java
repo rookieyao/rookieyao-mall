@@ -2,11 +2,11 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.OmsOrderReturnApplyResult;
-import com.rookieyao.dto.OmsReturnApplyQueryParam;
-import com.rookieyao.dto.OmsUpdateStatusParam;
+import com.rookieyao.admin.dto.OmsOrderReturnApplyResult;
+import com.rookieyao.admin.dto.OmsReturnApplyQueryParam;
+import com.rookieyao.admin.dto.OmsUpdateStatusParam;
 import com.rookieyao.mbg.model.OmsOrderReturnApply;
-import com.rookieyao.mbg.OmsOrderReturnApplyService;
+import com.rookieyao.admin.service.OmsOrderReturnApplyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * 订单退货申请管理
- * Created by macro on 2018/10/18.
+ * Created by rookieyao on 2018/10/18.
  */
 @Controller
 @Api(tags = "OmsOrderReturnApplyController", description = "订单退货申请管理")

@@ -2,10 +2,10 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.PmsProductAttributeParam;
-import com.rookieyao.dto.ProductAttrInfo;
+import com.rookieyao.admin.dto.PmsProductAttributeParam;
+import com.rookieyao.admin.dto.ProductAttrInfo;
 import com.rookieyao.mbg.model.PmsProductAttribute;
-import com.rookieyao.mbg.PmsProductAttributeService;
+import com.rookieyao.admin.service.PmsProductAttributeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * 商品属性管理Controller
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Controller
 @Api(tags = "PmsProductAttributeController", description = "商品属性管理")

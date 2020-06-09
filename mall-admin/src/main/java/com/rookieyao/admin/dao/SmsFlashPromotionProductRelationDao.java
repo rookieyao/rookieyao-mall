@@ -1,13 +1,13 @@
 package com.rookieyao.admin.dao;
 
-import com.rookieyao.dto.SmsFlashPromotionProduct;
+import com.rookieyao.admin.dto.SmsFlashPromotionProduct;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 /**
  * 限时购商品关联自定义Dao
- * Created by macro on 2018/11/16.
+ * Created by rookieyao on 2018/11/16.
  */
 public interface SmsFlashPromotionProductRelationDao {
     /**

@@ -1,18 +1,14 @@
 package com.rookieyao.admin.config;
 
+import com.rookieyao.mbg.model.UmsResource;
+import com.rookieyao.security.component.DynamicSecurityService;
+import com.rookieyao.security.config.SecurityConfig;
 import com.rookieyao.admin.service.UmsAdminService;
 import com.rookieyao.admin.service.UmsResourceService;
-import com.rookieyao.mbg.model.UmsResource;
-import com.rookieyao.security.
-//import com.rookieyao.security.component.DynamicSecurityService;
-//import com.rookieyao.security.config.SecurityConfig;
-//import com.rookieyao.mbg.UmsAdminService;
-//import com.rookieyao.mbg.UmsResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.ConfigAttribute;
-import org.springframework.security.access.SecurityConfig;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -23,7 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * mall-security模块相关配置
- * Created by macro on 2019/11/9.
+ * Created by rookieyao on 2019/11/9.
  */
 @Configuration
 @EnableWebSecurity

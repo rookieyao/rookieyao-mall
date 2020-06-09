@@ -1,15 +1,15 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.OmsOrderReturnApplyResult;
-import com.rookieyao.dto.OmsReturnApplyQueryParam;
-import com.rookieyao.dto.OmsUpdateStatusParam;
+import com.rookieyao.admin.dto.OmsOrderReturnApplyResult;
+import com.rookieyao.admin.dto.OmsReturnApplyQueryParam;
+import com.rookieyao.admin.dto.OmsUpdateStatusParam;
 import com.rookieyao.mbg.model.OmsOrderReturnApply;
 
 import java.util.List;
 
 /**
  * 退货申请管理Service
- * Created by macro on 2018/10/18.
+ * Created by rookieyao on 2018/10/18.
  */
 public interface OmsOrderReturnApplyService {
     /**

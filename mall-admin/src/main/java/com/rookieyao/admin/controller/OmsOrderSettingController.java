@@ -2,7 +2,7 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.OmsOrderSetting;
-import com.rookieyao.mbg.OmsOrderSettingService;
+import com.rookieyao.admin.service.OmsOrderSettingService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * 订单设置Controller
- * Created by macro on 2018/10/16.
+ * Created by rookieyao on 2018/10/16.
  */
 @Controller
 @Api(tags = "OmsOrderSettingController", description = "订单设置管理")

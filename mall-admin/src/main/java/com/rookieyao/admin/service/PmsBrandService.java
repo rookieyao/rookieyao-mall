@@ -1,6 +1,6 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.PmsBrandParam;
+import com.rookieyao.admin.dto.PmsBrandParam;
 import com.rookieyao.mbg.model.PmsBrand;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * 商品品牌Service
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public interface PmsBrandService {
     /**

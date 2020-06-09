@@ -2,7 +2,7 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.UmsMemberLevel;
-import com.rookieyao.mbg.UmsMemberLevelService;
+import com.rookieyao.admin.service.UmsMemberLevelService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * 会员等级管理Controller
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Controller
 @Api(tags = "UmsMemberLevelController", description = "会员等级管理")

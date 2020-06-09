@@ -1,14 +1,14 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dao.OmsOrderReturnApplyDao;
-import com.rookieyao.dto.OmsOrderReturnApplyResult;
-import com.rookieyao.dto.OmsReturnApplyQueryParam;
-import com.rookieyao.dto.OmsUpdateStatusParam;
-import com.rookieyao.mapper.OmsOrderReturnApplyMapper;
+import com.rookieyao.admin.dao.OmsOrderReturnApplyDao;
+import com.rookieyao.admin.dto.OmsOrderReturnApplyResult;
+import com.rookieyao.admin.dto.OmsReturnApplyQueryParam;
+import com.rookieyao.admin.dto.OmsUpdateStatusParam;
+import com.rookieyao.mbg.mapper.OmsOrderReturnApplyMapper;
 import com.rookieyao.mbg.model.OmsOrderReturnApply;
 import com.rookieyao.mbg.model.OmsOrderReturnApplyExample;
-import com.rookieyao.mbg.OmsOrderReturnApplyService;
+import com.rookieyao.admin.service.OmsOrderReturnApplyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * 订单退货管理Service
- * Created by macro on 2018/10/18.
+ * Created by rookieyao on 2018/10/18.
  */
 @Service
 public class OmsOrderReturnApplyServiceImpl implements OmsOrderReturnApplyService {

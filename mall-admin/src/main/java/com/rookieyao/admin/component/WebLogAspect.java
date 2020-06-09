@@ -3,7 +3,7 @@ package com.rookieyao.admin.component;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
 import cn.hutool.json.JSONUtil;
-import com.rookieyao.bo.WebLog;
+import com.rookieyao.admin.bo.WebLog;
 import io.swagger.annotations.ApiOperation;
 import net.logstash.logback.marker.Markers;
 import org.aspectj.lang.JoinPoint;
@@ -31,7 +31,7 @@ import java.util.Map;
 
 /**
  * 统一日志处理切面
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Aspect
 @Component
@@ -39,7 +39,7 @@ import java.util.Map;
 public class WebLogAspect {
     private static final Logger LOGGER = LoggerFactory.getLogger(WebLogAspect.class);
 
-    @Pointcut("execution(public * com.rookieyao.controller.*.*(..))")
+    @Pointcut("execution(public * com.macro.mall.controller.*.*(..))")
     public void webLog() {
     }
 

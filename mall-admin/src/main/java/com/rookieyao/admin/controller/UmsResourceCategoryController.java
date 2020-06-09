@@ -2,7 +2,7 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.UmsResourceCategory;
-import com.rookieyao.mbg.UmsResourceCategoryService;
+import com.rookieyao.admin.service.UmsResourceCategoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 后台资源分类管理Controller
- * Created by macro on 2020/2/5.
+ * Created by rookieyao on 2020/2/5.
  */
 @Controller
 @Api(tags = "UmsResourceCategoryController", description = "后台资源分类管理")

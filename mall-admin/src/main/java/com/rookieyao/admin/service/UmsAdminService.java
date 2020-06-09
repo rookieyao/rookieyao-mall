@@ -1,7 +1,7 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.UmsAdminParam;
-import com.rookieyao.dto.UpdateAdminPasswordParam;
+import com.rookieyao.admin.dto.UmsAdminParam;
+import com.rookieyao.admin.dto.UpdateAdminPasswordParam;
 import com.rookieyao.mbg.model.UmsAdmin;
 import com.rookieyao.mbg.model.UmsPermission;
 import com.rookieyao.mbg.model.UmsResource;
@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 后台管理员Service
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public interface UmsAdminService {
     /**

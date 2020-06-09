@@ -1,6 +1,6 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.*;
+import com.rookieyao.admin.dto.*;
 import com.rookieyao.mbg.model.OmsOrder;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * 订单管理Service
- * Created by macro on 2018/10/11.
+ * Created by rookieyao on 2018/10/11.
  */
 public interface OmsOrderService {
     /**

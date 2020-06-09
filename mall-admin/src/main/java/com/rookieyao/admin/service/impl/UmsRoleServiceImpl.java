@@ -1,14 +1,14 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dao.UmsRoleDao;
-import com.rookieyao.dao.UmsRolePermissionRelationDao;
-import com.rookieyao.mapper.UmsRoleMapper;
-import com.rookieyao.mapper.UmsRoleMenuRelationMapper;
-import com.rookieyao.mapper.UmsRolePermissionRelationMapper;
-import com.rookieyao.mapper.UmsRoleResourceRelationMapper;
+import com.rookieyao.admin.dao.UmsRoleDao;
+import com.rookieyao.admin.dao.UmsRolePermissionRelationDao;
+import com.rookieyao.mbg.mapper.UmsRoleMapper;
+import com.rookieyao.mbg.mapper.UmsRoleMenuRelationMapper;
+import com.rookieyao.mbg.mapper.UmsRolePermissionRelationMapper;
+import com.rookieyao.mbg.mapper.UmsRoleResourceRelationMapper;
 import com.rookieyao.mbg.model.*;
-import com.rookieyao.mbg.UmsRoleService;
+import com.rookieyao.admin.service.UmsRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * 后台角色管理Service实现类
- * Created by macro on 2018/9/30.
+ * Created by rookieyao on 2018/9/30.
  */
 @Service
 public class UmsRoleServiceImpl implements UmsRoleService {

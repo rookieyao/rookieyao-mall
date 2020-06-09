@@ -2,9 +2,9 @@ package com.rookieyao.admin.controller;
 
 
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.OssCallbackResult;
-import com.rookieyao.dto.OssPolicyResult;
-import com.rookieyao.mbg.impl.OssServiceImpl;
+import com.rookieyao.admin.dto.OssCallbackResult;
+import com.rookieyao.admin.dto.OssPolicyResult;
+import com.rookieyao.admin.service.impl.OssServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Oss相关操作接口
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Controller
 @Api(tags = "OssController", description = "Oss管理")

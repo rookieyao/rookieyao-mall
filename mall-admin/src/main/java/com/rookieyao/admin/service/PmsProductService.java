@@ -1,8 +1,8 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.PmsProductParam;
-import com.rookieyao.dto.PmsProductQueryParam;
-import com.rookieyao.dto.PmsProductResult;
+import com.rookieyao.admin.dto.PmsProductParam;
+import com.rookieyao.admin.dto.PmsProductQueryParam;
+import com.rookieyao.admin.dto.PmsProductResult;
 import com.rookieyao.mbg.model.PmsProduct;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * 商品管理Service
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public interface PmsProductService {
     /**

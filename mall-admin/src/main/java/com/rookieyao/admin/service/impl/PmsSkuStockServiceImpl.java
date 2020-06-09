@@ -1,10 +1,10 @@
 package com.rookieyao.admin.service.impl;
 
-import com.rookieyao.dao.PmsSkuStockDao;
-import com.rookieyao.mapper.PmsSkuStockMapper;
+import com.rookieyao.admin.dao.PmsSkuStockDao;
+import com.rookieyao.mbg.mapper.PmsSkuStockMapper;
 import com.rookieyao.mbg.model.PmsSkuStock;
 import com.rookieyao.mbg.model.PmsSkuStockExample;
-import com.rookieyao.mbg.PmsSkuStockService;
+import com.rookieyao.admin.service.PmsSkuStockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 商品sku库存管理Service实现类
- * Created by macro on 2018/4/27.
+ * Created by rookieyao on 2018/4/27.
  */
 @Service
 public class PmsSkuStockServiceImpl implements PmsSkuStockService {

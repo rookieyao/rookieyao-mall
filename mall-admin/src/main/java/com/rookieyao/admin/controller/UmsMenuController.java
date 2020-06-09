@@ -2,9 +2,9 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.UmsMenuNode;
+import com.rookieyao.admin.dto.UmsMenuNode;
 import com.rookieyao.mbg.model.UmsMenu;
-import com.rookieyao.mbg.UmsMenuService;
+import com.rookieyao.admin.service.UmsMenuService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 后台菜单管理Controller
- * Created by macro on 2020/2/4.
+ * Created by rookieyao on 2020/2/4.
  */
 @Controller
 @Api(tags = "UmsMenuController", description = "后台菜单管理")

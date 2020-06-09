@@ -2,11 +2,11 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.PmsProductParam;
-import com.rookieyao.dto.PmsProductQueryParam;
-import com.rookieyao.dto.PmsProductResult;
+import com.rookieyao.admin.dto.PmsProductParam;
+import com.rookieyao.admin.dto.PmsProductQueryParam;
+import com.rookieyao.admin.dto.PmsProductResult;
 import com.rookieyao.mbg.model.PmsProduct;
-import com.rookieyao.mbg.PmsProductService;
+import com.rookieyao.admin.service.PmsProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 商品管理Controller
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Controller
 @Api(tags = "PmsProductController", description = "商品管理")

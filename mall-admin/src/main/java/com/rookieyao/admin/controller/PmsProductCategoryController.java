@@ -2,10 +2,10 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.PmsProductCategoryParam;
-import com.rookieyao.dto.PmsProductCategoryWithChildrenItem;
+import com.rookieyao.admin.dto.PmsProductCategoryParam;
+import com.rookieyao.admin.dto.PmsProductCategoryWithChildrenItem;
 import com.rookieyao.mbg.model.PmsProductCategory;
-import com.rookieyao.mbg.PmsProductCategoryService;
+import com.rookieyao.admin.service.PmsProductCategoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 商品分类模块Controller
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Controller
 @Api(tags = "PmsProductCategoryController", description = "商品分类管理")

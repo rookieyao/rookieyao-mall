@@ -1,7 +1,7 @@
 package com.rookieyao.admin.dao;
 
-import com.rookieyao.dto.OmsOrderReturnApplyResult;
-import com.rookieyao.dto.OmsReturnApplyQueryParam;
+import com.rookieyao.admin.dto.OmsOrderReturnApplyResult;
+import com.rookieyao.admin.dto.OmsReturnApplyQueryParam;
 import com.rookieyao.mbg.model.OmsOrderReturnApply;
 import org.apache.ibatis.annotations.Param;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 订单退货申请自定义Dao
- * Created by macro on 2018/10/18.
+ * Created by rookieyao on 2018/10/18.
  */
 public interface OmsOrderReturnApplyDao {
     /**

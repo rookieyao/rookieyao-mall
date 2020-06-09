@@ -4,7 +4,7 @@ import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.UmsResource;
 import com.rookieyao.security.component.DynamicSecurityMetadataSource;
-import com.rookieyao.mbg.UmsResourceService;
+import com.rookieyao.admin.service.UmsResourceService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 后台资源管理Controller
- * Created by macro on 2020/2/4.
+ * Created by rookieyao on 2020/2/4.
  */
 @Controller
 @Api(tags = "UmsResourceController", description = "后台资源管理")

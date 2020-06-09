@@ -2,14 +2,14 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.UmsAdminLoginParam;
-import com.rookieyao.dto.UmsAdminParam;
-import com.rookieyao.dto.UpdateAdminPasswordParam;
+import com.rookieyao.admin.dto.UmsAdminLoginParam;
+import com.rookieyao.admin.dto.UmsAdminParam;
+import com.rookieyao.admin.dto.UpdateAdminPasswordParam;
 import com.rookieyao.mbg.model.UmsAdmin;
 import com.rookieyao.mbg.model.UmsPermission;
 import com.rookieyao.mbg.model.UmsRole;
-import com.rookieyao.mbg.UmsAdminService;
-import com.rookieyao.mbg.UmsRoleService;
+import com.rookieyao.admin.service.UmsAdminService;
+import com.rookieyao.admin.service.UmsRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ import java.util.Map;
 
 /**
  * 后台用户管理
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Controller
 @Api(tags = "UmsAdminController", description = "后台用户管理")

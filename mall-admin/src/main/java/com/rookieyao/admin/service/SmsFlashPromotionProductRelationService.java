@@ -1,6 +1,6 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.SmsFlashPromotionProduct;
+import com.rookieyao.admin.dto.SmsFlashPromotionProduct;
 import com.rookieyao.mbg.model.SmsFlashPromotionProductRelation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * 限时购商品关联管理Service
- * Created by macro on 2018/11/16.
+ * Created by rookieyao on 2018/11/16.
  */
 public interface SmsFlashPromotionProductRelationService {
     /**

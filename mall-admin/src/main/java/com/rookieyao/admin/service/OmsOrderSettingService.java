@@ -4,7 +4,7 @@ import com.rookieyao.mbg.model.OmsOrderSetting;
 
 /**
  * 订单设置Service
- * Created by macro on 2018/10/16.
+ * Created by rookieyao on 2018/10/16.
  */
 public interface OmsOrderSettingService {
     /**

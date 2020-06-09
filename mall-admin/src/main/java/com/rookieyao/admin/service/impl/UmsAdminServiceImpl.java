@@ -3,18 +3,18 @@ package com.rookieyao.admin.service.impl;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.bo.AdminUserDetails;
-import com.rookieyao.dao.UmsAdminPermissionRelationDao;
-import com.rookieyao.dao.UmsAdminRoleRelationDao;
-import com.rookieyao.dto.UmsAdminParam;
-import com.rookieyao.dto.UpdateAdminPasswordParam;
-import com.rookieyao.mapper.UmsAdminLoginLogMapper;
-import com.rookieyao.mapper.UmsAdminMapper;
-import com.rookieyao.mapper.UmsAdminPermissionRelationMapper;
-import com.rookieyao.mapper.UmsAdminRoleRelationMapper;
+import com.rookieyao.admin.bo.AdminUserDetails;
+import com.rookieyao.admin.dao.UmsAdminPermissionRelationDao;
+import com.rookieyao.admin.dao.UmsAdminRoleRelationDao;
+import com.rookieyao.admin.dto.UmsAdminParam;
+import com.rookieyao.admin.dto.UpdateAdminPasswordParam;
+import com.rookieyao.mbg.mapper.UmsAdminLoginLogMapper;
+import com.rookieyao.mbg.mapper.UmsAdminMapper;
+import com.rookieyao.mbg.mapper.UmsAdminPermissionRelationMapper;
+import com.rookieyao.mbg.mapper.UmsAdminRoleRelationMapper;
 import com.rookieyao.mbg.model.*;
 import com.rookieyao.security.util.JwtTokenUtil;
-import com.rookieyao.mbg.UmsAdminService;
+import com.rookieyao.admin.service.UmsAdminService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -40,7 +40,7 @@ import java.util.stream.Collectors;
 
 /**
  * UmsAdminService实现类
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Service
 public class UmsAdminServiceImpl implements UmsAdminService {

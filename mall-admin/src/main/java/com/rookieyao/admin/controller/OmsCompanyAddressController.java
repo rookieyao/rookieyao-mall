@@ -2,7 +2,7 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.OmsCompanyAddress;
-import com.rookieyao.mbg.OmsCompanyAddressService;
+import com.rookieyao.admin.service.OmsCompanyAddressService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 收货地址管理Controller
- * Created by macro on 2018/10/18.
+ * Created by rookieyao on 2018/10/18.
  */
 @Controller
 @Api(tags = "OmsCompanyAddressController", description = "收货地址管理")

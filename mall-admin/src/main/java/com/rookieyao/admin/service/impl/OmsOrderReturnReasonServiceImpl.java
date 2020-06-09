@@ -1,10 +1,10 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.mapper.OmsOrderReturnReasonMapper;
+import com.rookieyao.mbg.mapper.OmsOrderReturnReasonMapper;
 import com.rookieyao.mbg.model.OmsOrderReturnReason;
 import com.rookieyao.mbg.model.OmsOrderReturnReasonExample;
-import com.rookieyao.mbg.OmsOrderReturnReasonService;
+import com.rookieyao.admin.service.OmsOrderReturnReasonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 订单原因管理Service实现类
- * Created by macro on 2018/10/17.
+ * Created by rookieyao on 2018/10/17.
  */
 @Service
 public class OmsOrderReturnReasonServiceImpl implements OmsOrderReturnReasonService {

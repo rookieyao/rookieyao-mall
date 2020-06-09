@@ -2,9 +2,9 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.SmsFlashPromotionProduct;
+import com.rookieyao.admin.dto.SmsFlashPromotionProduct;
 import com.rookieyao.mbg.model.SmsFlashPromotionProductRelation;
-import com.rookieyao.mbg.SmsFlashPromotionProductRelationService;
+import com.rookieyao.admin.service.SmsFlashPromotionProductRelationService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 限时购和商品关系管理Controller
- * Created by macro on 2018/11/16.
+ * Created by rookieyao on 2018/11/16.
  */
 @Controller
 @Api(tags = "SmsFlashPromotionProductRelationController", description = "限时购和商品关系管理")

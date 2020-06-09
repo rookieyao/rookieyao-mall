@@ -3,7 +3,7 @@ package com.rookieyao.admin.controller;
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.*;
-import com.rookieyao.mbg.UmsRoleService;
+import com.rookieyao.admin.service.UmsRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * 后台用户角色管理
- * Created by macro on 2018/9/30.
+ * Created by rookieyao on 2018/9/30.
  */
 @Controller
 @Api(tags = "UmsRoleController", description = "后台用户角色管理")

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * 后台用户角色自定义Dao
- * Created by macro on 2020/2/2.
+ * Created by rookieyao on 2020/2/2.
  */
 public interface UmsRoleDao {
     List<UmsMenu> getMenuList(@Param("adminId") Long adminId);

@@ -6,10 +6,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * MyBatis配置类
- * Created by macro on 2019/4/8.
+ * Created by rookieyao on 2019/4/8.
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan({"com.rookieyao.mapper", "com.rookieyao.dao"})
+@MapperScan({"com.rookieyao.mbg.mapper", "com.rookieyao.admin.dao"})
 public class MyBatisConfig {
 }

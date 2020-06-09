@@ -1,12 +1,12 @@
 package com.rookieyao.admin.dao;
 
-import com.rookieyao.dto.PmsProductCategoryWithChildrenItem;
+import com.rookieyao.admin.dto.PmsProductCategoryWithChildrenItem;
 
 import java.util.List;
 
 /**
  * 商品分类自定义Dao
- * Created by macro on 2018/5/25.
+ * Created by rookieyao on 2018/5/25.
  */
 public interface PmsProductCategoryDao {
     /**

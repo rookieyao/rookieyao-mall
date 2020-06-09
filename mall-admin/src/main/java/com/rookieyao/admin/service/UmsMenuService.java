@@ -1,13 +1,13 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.UmsMenuNode;
+import com.rookieyao.admin.dto.UmsMenuNode;
 import com.rookieyao.mbg.model.UmsMenu;
 
 import java.util.List;
 
 /**
  * 后台菜单管理Service
- * Created by macro on 2020/2/2.
+ * Created by rookieyao on 2020/2/2.
  */
 public interface UmsMenuService {
     /**

@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * Swagger2API文档的配置
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Configuration
 @EnableSwagger2
@@ -29,7 +29,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.rookieyao.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.macro.mall.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .securitySchemes(securitySchemes())

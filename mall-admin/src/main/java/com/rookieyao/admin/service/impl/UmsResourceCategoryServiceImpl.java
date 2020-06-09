@@ -1,9 +1,9 @@
 package com.rookieyao.admin.service.impl;
 
-import com.rookieyao.mapper.UmsResourceCategoryMapper;
+import com.rookieyao.mbg.mapper.UmsResourceCategoryMapper;
 import com.rookieyao.mbg.model.UmsResourceCategory;
 import com.rookieyao.mbg.model.UmsResourceCategoryExample;
-import com.rookieyao.mbg.UmsResourceCategoryService;
+import com.rookieyao.admin.service.UmsResourceCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * 后台资源分类管理Service实现类
- * Created by macro on 2020/2/5.
+ * Created by rookieyao on 2020/2/5.
  */
 @Service
 public class UmsResourceCategoryServiceImpl implements UmsResourceCategoryService {

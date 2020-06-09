@@ -1,9 +1,9 @@
 package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.UmsPermissionNode;
+import com.rookieyao.admin.dto.UmsPermissionNode;
 import com.rookieyao.mbg.model.UmsPermission;
-import com.rookieyao.mbg.UmsPermissionService;
+import com.rookieyao.admin.service.UmsPermissionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * 后台用户权限管理
- * Created by macro on 2018/9/29.
+ * Created by rookieyao on 2018/9/29.
  */
 @Controller
 @Api(tags = "UmsPermissionController", description = "后台用户权限管理")

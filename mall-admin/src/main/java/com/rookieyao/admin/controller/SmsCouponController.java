@@ -2,9 +2,9 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.SmsCouponParam;
+import com.rookieyao.admin.dto.SmsCouponParam;
 import com.rookieyao.mbg.model.SmsCoupon;
-import com.rookieyao.mbg.SmsCouponService;
+import com.rookieyao.admin.service.SmsCouponService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 优惠券管理Controller
- * Created by macro on 2018/8/28.
+ * Created by rookieyao on 2018/8/28.
  */
 @Controller
 @Api(tags = "SmsCouponController", description = "优惠券管理")

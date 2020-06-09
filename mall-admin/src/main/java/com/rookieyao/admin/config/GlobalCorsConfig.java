@@ -8,7 +8,7 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * 全局跨域配置
  * 注意：前端从网关进行调用时不需要配置
- * Created by macro on 2019/7/27.
+ * Created by rookieyao on 2019/7/27.
  */
 //@Configuration
 public class GlobalCorsConfig {

@@ -1,13 +1,13 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.PmsProductAttributeCategoryItem;
+import com.rookieyao.admin.dto.PmsProductAttributeCategoryItem;
 import com.rookieyao.mbg.model.PmsProductAttributeCategory;
 
 import java.util.List;
 
 /**
  * 商品属性分类Service
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public interface PmsProductAttributeCategoryService {
     /**

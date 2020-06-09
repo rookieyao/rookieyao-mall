@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 创建和修改商品时使用的参数
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public class PmsProductParam extends PmsProduct {
     @ApiModelProperty("商品阶梯价格设置")

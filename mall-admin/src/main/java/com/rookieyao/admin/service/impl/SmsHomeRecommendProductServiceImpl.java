@@ -1,10 +1,10 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.mapper.SmsHomeRecommendProductMapper;
+import com.rookieyao.mbg.mapper.SmsHomeRecommendProductMapper;
 import com.rookieyao.mbg.model.SmsHomeRecommendProduct;
 import com.rookieyao.mbg.model.SmsHomeRecommendProductExample;
-import com.rookieyao.mbg.SmsHomeRecommendProductService;
+import com.rookieyao.admin.service.SmsHomeRecommendProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 首页人气推荐管理Service实现类
- * Created by macro on 2018/11/7.
+ * Created by rookieyao on 2018/11/7.
  */
 @Service
 public class SmsHomeRecommendProductServiceImpl implements SmsHomeRecommendProductService {

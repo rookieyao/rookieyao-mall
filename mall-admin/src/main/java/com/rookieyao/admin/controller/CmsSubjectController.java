@@ -3,7 +3,7 @@ package com.rookieyao.admin.controller;
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.CmsSubject;
-import com.rookieyao.mbg.CmsSubjectService;
+import com.rookieyao.admin.service.CmsSubjectService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * 商品专题Controller
- * Created by macro on 2018/6/1.
+ * Created by rookieyao on 2018/6/1.
  */
 @Controller
 @Api(tags = "CmsSubjectController", description = "商品专题管理")

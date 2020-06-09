@@ -1,7 +1,7 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.PmsProductCategoryParam;
-import com.rookieyao.dto.PmsProductCategoryWithChildrenItem;
+import com.rookieyao.admin.dto.PmsProductCategoryParam;
+import com.rookieyao.admin.dto.PmsProductCategoryWithChildrenItem;
 import com.rookieyao.mbg.model.PmsProductCategory;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 商品分类Service
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public interface PmsProductCategoryService {
     /**

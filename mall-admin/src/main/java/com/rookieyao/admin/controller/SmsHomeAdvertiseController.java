@@ -3,7 +3,7 @@ package com.rookieyao.admin.controller;
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.SmsHomeAdvertise;
-import com.rookieyao.mbg.SmsHomeAdvertiseService;
+import com.rookieyao.admin.service.SmsHomeAdvertiseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * 首页轮播广告管理Controller
- * Created by macro on 2018/11/7.
+ * Created by rookieyao on 2018/11/7.
  */
 @Controller
 @Api(tags = "SmsHomeAdvertiseController", description = "首页轮播广告管理")

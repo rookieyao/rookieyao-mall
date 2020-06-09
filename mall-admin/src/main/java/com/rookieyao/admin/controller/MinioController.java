@@ -1,7 +1,7 @@
 package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.MinioUploadDto;
+import com.rookieyao.admin.dto.MinioUploadDto;
 import io.minio.MinioClient;
 import io.minio.policy.PolicyType;
 import io.swagger.annotations.Api;
@@ -20,7 +20,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by macro on 2019/12/25.
+ * Created by rookieyao on 2019/12/25.
  */
 @Api(tags = "MinioController", description = "MinIO对象存储管理")
 @Controller

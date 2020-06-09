@@ -2,13 +2,13 @@ package com.rookieyao.admin.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dao.*;
-import com.rookieyao.dto.PmsProductParam;
-import com.rookieyao.dto.PmsProductQueryParam;
-import com.rookieyao.dto.PmsProductResult;
-import com.rookieyao.mapper.*;
+import com.rookieyao.admin.dao.*;
+import com.rookieyao.admin.dto.PmsProductParam;
+import com.rookieyao.admin.dto.PmsProductQueryParam;
+import com.rookieyao.admin.dto.PmsProductResult;
+import com.rookieyao.mbg.mapper.*;
 import com.rookieyao.mbg.model.*;
-import com.rookieyao.mbg.PmsProductService;
+import com.rookieyao.admin.service.PmsProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 
 /**
  * 商品管理Service实现类
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Service
 public class PmsProductServiceImpl implements PmsProductService {

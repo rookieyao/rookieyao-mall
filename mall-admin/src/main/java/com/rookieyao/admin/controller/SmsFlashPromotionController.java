@@ -3,7 +3,7 @@ package com.rookieyao.admin.controller;
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.SmsFlashPromotion;
-import com.rookieyao.mbg.SmsFlashPromotionService;
+import com.rookieyao.admin.service.SmsFlashPromotionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * 限时购活动管理Controller
- * Created by macro on 2018/11/16.
+ * Created by rookieyao on 2018/11/16.
  */
 @Controller
 @Api(tags = "SmsFlashPromotionController", description = "限时购活动管理")

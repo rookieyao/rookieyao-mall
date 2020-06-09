@@ -2,7 +2,7 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.PmsSkuStock;
-import com.rookieyao.mbg.PmsSkuStockService;
+import com.rookieyao.admin.service.PmsSkuStockService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * sku库存Controller
- * Created by macro on 2018/4/27.
+ * Created by rookieyao on 2018/4/27.
  */
 @Controller
 @Api(tags = "PmsSkuStockController", description = "sku商品库存管理")

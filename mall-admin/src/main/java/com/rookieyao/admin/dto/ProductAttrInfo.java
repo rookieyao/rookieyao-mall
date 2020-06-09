@@ -3,7 +3,7 @@ package com.rookieyao.admin.dto;
 
 /**
  * 商品分类对应属性信息
- * Created by macro on 2018/5/23.
+ * Created by rookieyao on 2018/5/23.
  */
 public class ProductAttrInfo {
     private Long attributeId;

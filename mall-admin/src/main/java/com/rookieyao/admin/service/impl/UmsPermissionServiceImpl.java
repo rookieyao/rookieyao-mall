@@ -1,10 +1,10 @@
 package com.rookieyao.admin.service.impl;
 
-import com.rookieyao.dto.UmsPermissionNode;
-import com.rookieyao.mapper.UmsPermissionMapper;
+import com.rookieyao.admin.dto.UmsPermissionNode;
+import com.rookieyao.mbg.mapper.UmsPermissionMapper;
 import com.rookieyao.mbg.model.UmsPermission;
 import com.rookieyao.mbg.model.UmsPermissionExample;
-import com.rookieyao.mbg.UmsPermissionService;
+import com.rookieyao.admin.service.UmsPermissionService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 /**
  * 后台用户权限管理Service实现类
- * Created by macro on 2018/9/29.
+ * Created by rookieyao on 2018/9/29.
  */
 @Service
 public class UmsPermissionServiceImpl implements UmsPermissionService {

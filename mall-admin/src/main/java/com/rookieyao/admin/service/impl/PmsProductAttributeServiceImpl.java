@@ -1,15 +1,15 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dao.PmsProductAttributeDao;
-import com.rookieyao.dto.PmsProductAttributeParam;
-import com.rookieyao.dto.ProductAttrInfo;
-import com.rookieyao.mapper.PmsProductAttributeCategoryMapper;
-import com.rookieyao.mapper.PmsProductAttributeMapper;
+import com.rookieyao.admin.dao.PmsProductAttributeDao;
+import com.rookieyao.admin.dto.PmsProductAttributeParam;
+import com.rookieyao.admin.dto.ProductAttrInfo;
+import com.rookieyao.mbg.mapper.PmsProductAttributeCategoryMapper;
+import com.rookieyao.mbg.mapper.PmsProductAttributeMapper;
 import com.rookieyao.mbg.model.PmsProductAttribute;
 import com.rookieyao.mbg.model.PmsProductAttributeCategory;
 import com.rookieyao.mbg.model.PmsProductAttributeExample;
-import com.rookieyao.mbg.PmsProductAttributeService;
+import com.rookieyao.admin.service.PmsProductAttributeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 商品属性Service实现类
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Service
 public class PmsProductAttributeServiceImpl implements PmsProductAttributeService {

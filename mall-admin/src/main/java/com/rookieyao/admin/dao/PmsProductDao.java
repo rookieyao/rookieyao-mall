@@ -1,12 +1,12 @@
 package com.rookieyao.admin.dao;
 
-import com.rookieyao.dto.PmsProductResult;
+import com.rookieyao.admin.dto.PmsProductResult;
 import org.apache.ibatis.annotations.Param;
 
 
 /**
  * 商品自定义Dao
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public interface PmsProductDao {
     /**

@@ -2,7 +2,7 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
 import com.rookieyao.mbg.model.CmsPrefrenceArea;
-import com.rookieyao.mbg.CmsPrefrenceAreaService;
+import com.rookieyao.admin.service.CmsPrefrenceAreaService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 商品优选管理Controller
- * Created by macro on 2018/6/1.
+ * Created by rookieyao on 2018/6/1.
  */
 @Controller
 @Api(tags = "CmsPrefrenceAreaController", description = "商品优选管理")

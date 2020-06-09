@@ -1,12 +1,12 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dao.SmsFlashPromotionProductRelationDao;
-import com.rookieyao.dto.SmsFlashPromotionProduct;
-import com.rookieyao.mapper.SmsFlashPromotionProductRelationMapper;
+import com.rookieyao.admin.dao.SmsFlashPromotionProductRelationDao;
+import com.rookieyao.admin.dto.SmsFlashPromotionProduct;
+import com.rookieyao.mbg.mapper.SmsFlashPromotionProductRelationMapper;
 import com.rookieyao.mbg.model.SmsFlashPromotionProductRelation;
 import com.rookieyao.mbg.model.SmsFlashPromotionProductRelationExample;
-import com.rookieyao.mbg.SmsFlashPromotionProductRelationService;
+import com.rookieyao.admin.service.SmsFlashPromotionProductRelationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * 限时购商品关联管理Service实现类
- * Created by macro on 2018/11/16.
+ * Created by rookieyao on 2018/11/16.
  */
 @Service
 public class SmsFlashPromotionProductRelationServiceImpl implements SmsFlashPromotionProductRelationService {

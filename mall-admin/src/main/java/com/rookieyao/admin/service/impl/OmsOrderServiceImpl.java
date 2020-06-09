@@ -1,15 +1,15 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dao.OmsOrderDao;
-import com.rookieyao.dao.OmsOrderOperateHistoryDao;
-import com.rookieyao.dto.*;
-import com.rookieyao.mapper.OmsOrderMapper;
-import com.rookieyao.mapper.OmsOrderOperateHistoryMapper;
+import com.rookieyao.admin.dao.OmsOrderDao;
+import com.rookieyao.admin.dao.OmsOrderOperateHistoryDao;
+import com.rookieyao.admin.dto.*;
+import com.rookieyao.mbg.mapper.OmsOrderMapper;
+import com.rookieyao.mbg.mapper.OmsOrderOperateHistoryMapper;
 import com.rookieyao.mbg.model.OmsOrder;
 import com.rookieyao.mbg.model.OmsOrderExample;
 import com.rookieyao.mbg.model.OmsOrderOperateHistory;
-import com.rookieyao.mbg.OmsOrderService;
+import com.rookieyao.admin.service.OmsOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 
 /**
  * 订单管理Service实现类
- * Created by macro on 2018/10/11.
+ * Created by rookieyao on 2018/10/11.
  */
 @Service
 public class OmsOrderServiceImpl implements OmsOrderService {

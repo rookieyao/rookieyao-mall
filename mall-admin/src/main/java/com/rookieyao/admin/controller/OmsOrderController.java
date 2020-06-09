@@ -2,9 +2,9 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.*;
+import com.rookieyao.admin.dto.*;
 import com.rookieyao.mbg.model.OmsOrder;
-import com.rookieyao.mbg.OmsOrderService;
+import com.rookieyao.admin.service.OmsOrderService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 订单管理Controller
- * Created by macro on 2018/10/11.
+ * Created by rookieyao on 2018/10/11.
  */
 @Controller
 @Api(tags = "OmsOrderController", description = "订单管理")

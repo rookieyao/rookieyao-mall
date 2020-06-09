@@ -1,8 +1,8 @@
 package com.rookieyao.admin.dao;
 
-import com.rookieyao.dto.OmsOrderDeliveryParam;
-import com.rookieyao.dto.OmsOrderDetail;
-import com.rookieyao.dto.OmsOrderQueryParam;
+import com.rookieyao.admin.dto.OmsOrderDeliveryParam;
+import com.rookieyao.admin.dto.OmsOrderDetail;
+import com.rookieyao.admin.dto.OmsOrderQueryParam;
 import com.rookieyao.mbg.model.OmsOrder;
 import org.apache.ibatis.annotations.Param;
 
@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * 订单自定义查询Dao
- * Created by macro on 2018/10/12.
+ * Created by rookieyao on 2018/10/12.
  */
 public interface OmsOrderDao {
     /**

@@ -1,7 +1,7 @@
 package com.rookieyao.admin.service;
 
-import com.rookieyao.dto.PmsProductAttributeParam;
-import com.rookieyao.dto.ProductAttrInfo;
+import com.rookieyao.admin.dto.PmsProductAttributeParam;
+import com.rookieyao.admin.dto.ProductAttrInfo;
 import com.rookieyao.mbg.model.PmsProductAttribute;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 商品属性Service
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 public interface PmsProductAttributeService {
     /**

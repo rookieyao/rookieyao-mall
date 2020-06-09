@@ -1,10 +1,10 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.mapper.CmsSubjectMapper;
+import com.rookieyao.mbg.mapper.CmsSubjectMapper;
 import com.rookieyao.mbg.model.CmsSubject;
 import com.rookieyao.mbg.model.CmsSubjectExample;
-import com.rookieyao.mbg.CmsSubjectService;
+import com.rookieyao.admin.service.CmsSubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * 商品专题Service实现类
- * Created by macro on 2018/6/1.
+ * Created by rookieyao on 2018/6/1.
  */
 @Service
 public class CmsSubjectServiceImpl implements CmsSubjectService {

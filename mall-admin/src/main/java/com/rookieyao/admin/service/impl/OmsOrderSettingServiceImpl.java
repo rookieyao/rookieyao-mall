@@ -1,14 +1,14 @@
 package com.rookieyao.admin.service.impl;
 
-import com.rookieyao.mapper.OmsOrderSettingMapper;
+import com.rookieyao.mbg.mapper.OmsOrderSettingMapper;
 import com.rookieyao.mbg.model.OmsOrderSetting;
-import com.rookieyao.mbg.OmsOrderSettingService;
+import com.rookieyao.admin.service.OmsOrderSettingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * 订单设置管理Service实现类
- * Created by macro on 2018/10/16.
+ * Created by rookieyao on 2018/10/16.
  */
 @Service
 public class OmsOrderSettingServiceImpl implements OmsOrderSettingService {

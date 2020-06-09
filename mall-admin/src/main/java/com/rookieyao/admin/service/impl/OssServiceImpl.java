@@ -5,10 +5,10 @@ import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.common.utils.BinaryUtil;
 import com.aliyun.oss.model.MatchMode;
 import com.aliyun.oss.model.PolicyConditions;
-import com.rookieyao.dto.OssCallbackParam;
-import com.rookieyao.dto.OssCallbackResult;
-import com.rookieyao.dto.OssPolicyResult;
-import com.rookieyao.mbg.OssService;
+import com.rookieyao.admin.dto.OssCallbackParam;
+import com.rookieyao.admin.dto.OssCallbackResult;
+import com.rookieyao.admin.dto.OssPolicyResult;
+import com.rookieyao.admin.service.OssService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import java.util.Date;
 
 /**
  * oss上传管理Service实现类
- * Created by macro on 2018/5/17.
+ * Created by rookieyao on 2018/5/17.
  */
 @Service
 public class OssServiceImpl implements OssService {

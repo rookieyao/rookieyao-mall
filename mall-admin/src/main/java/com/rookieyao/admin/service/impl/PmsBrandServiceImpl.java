@@ -1,14 +1,14 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dto.PmsBrandParam;
-import com.rookieyao.mapper.PmsBrandMapper;
-import com.rookieyao.mapper.PmsProductMapper;
+import com.rookieyao.admin.dto.PmsBrandParam;
+import com.rookieyao.mbg.mapper.PmsBrandMapper;
+import com.rookieyao.mbg.mapper.PmsProductMapper;
 import com.rookieyao.mbg.model.PmsBrand;
 import com.rookieyao.mbg.model.PmsBrandExample;
 import com.rookieyao.mbg.model.PmsProduct;
 import com.rookieyao.mbg.model.PmsProductExample;
-import com.rookieyao.mbg.PmsBrandService;
+import com.rookieyao.admin.service.PmsBrandService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 商品品牌Service实现类
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Service
 public class PmsBrandServiceImpl implements PmsBrandService {

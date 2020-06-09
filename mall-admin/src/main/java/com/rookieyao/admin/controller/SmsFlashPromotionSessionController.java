@@ -1,9 +1,9 @@
 package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.SmsFlashPromotionSessionDetail;
+import com.rookieyao.admin.dto.SmsFlashPromotionSessionDetail;
 import com.rookieyao.mbg.model.SmsFlashPromotionSession;
-import com.rookieyao.mbg.SmsFlashPromotionSessionService;
+import com.rookieyao.admin.service.SmsFlashPromotionSessionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * 限时购场次管理Controller
- * Created by macro on 2018/11/16.
+ * Created by rookieyao on 2018/11/16.
  */
 @Controller
 @Api(tags = "SmsFlashPromotionSessionController", description = "限时购场次管理")

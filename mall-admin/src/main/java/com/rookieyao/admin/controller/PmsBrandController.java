@@ -2,9 +2,9 @@ package com.rookieyao.admin.controller;
 
 import com.rookieyao.common.api.CommonPage;
 import com.rookieyao.common.api.CommonResult;
-import com.rookieyao.dto.PmsBrandParam;
+import com.rookieyao.admin.dto.PmsBrandParam;
 import com.rookieyao.mbg.model.PmsBrand;
-import com.rookieyao.mbg.PmsBrandService;
+import com.rookieyao.admin.service.PmsBrandService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * 品牌功能Controller
- * Created by macro on 2018/4/26.
+ * Created by rookieyao on 2018/4/26.
  */
 @Controller
 @Api(tags = "PmsBrandController", description = "商品品牌管理")

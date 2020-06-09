@@ -2,10 +2,10 @@ package com.rookieyao.admin.service.impl;
 
 import cn.hutool.core.util.StrUtil;
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.mapper.UmsResourceMapper;
+import com.rookieyao.mbg.mapper.UmsResourceMapper;
 import com.rookieyao.mbg.model.UmsResource;
 import com.rookieyao.mbg.model.UmsResourceExample;
-import com.rookieyao.mbg.UmsResourceService;
+import com.rookieyao.admin.service.UmsResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * 后台资源管理Service实现类
- * Created by macro on 2020/2/2.
+ * Created by rookieyao on 2020/2/2.
  */
 @Service
 public class UmsResourceServiceImpl implements UmsResourceService {

@@ -10,6 +10,7 @@
     <groupId>com.rookieyao</groupId>
     <artifactId>mall-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>mall-common</name>
     <description>mall-common project for Spring Boot</description>
 

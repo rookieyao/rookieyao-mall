@@ -1,15 +1,15 @@
 package com.rookieyao.admin.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.rookieyao.dao.SmsCouponDao;
-import com.rookieyao.dao.SmsCouponProductCategoryRelationDao;
-import com.rookieyao.dao.SmsCouponProductRelationDao;
-import com.rookieyao.dto.SmsCouponParam;
-import com.rookieyao.mapper.SmsCouponMapper;
-import com.rookieyao.mapper.SmsCouponProductCategoryRelationMapper;
-import com.rookieyao.mapper.SmsCouponProductRelationMapper;
+import com.rookieyao.admin.dao.SmsCouponDao;
+import com.rookieyao.admin.dao.SmsCouponProductCategoryRelationDao;
+import com.rookieyao.admin.dao.SmsCouponProductRelationDao;
+import com.rookieyao.admin.dto.SmsCouponParam;
+import com.rookieyao.mbg.mapper.SmsCouponMapper;
+import com.rookieyao.mbg.mapper.SmsCouponProductCategoryRelationMapper;
+import com.rookieyao.mbg.mapper.SmsCouponProductRelationMapper;
 import com.rookieyao.mbg.model.*;
-import com.rookieyao.mbg.SmsCouponService;
+import com.rookieyao.admin.service.SmsCouponService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 优惠券管理Service实现类
- * Created by macro on 2018/8/28.
+ * Created by rookieyao on 2018/8/28.
  */
 @Service
 public class SmsCouponServiceImpl implements SmsCouponService {

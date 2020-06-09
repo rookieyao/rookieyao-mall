@@ -13,4 +13,4 @@ spring:
 logging:
   level:
     root: info #日志配置DEBUG,INFO,WARN,ERROR
-    com.macro.mall: debug
+    com.rookieyao.mall: debug

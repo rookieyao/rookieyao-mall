@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsAlbum;
 import com.rookieyao.mbg.model.PmsAlbumExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsAlbumMapper {
     long countByExample(PmsAlbumExample example);

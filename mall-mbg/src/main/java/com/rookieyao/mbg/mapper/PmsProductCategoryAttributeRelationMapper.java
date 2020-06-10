@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsProductCategoryAttributeRelation;
 import com.rookieyao.mbg.model.PmsProductCategoryAttributeRelationExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsProductCategoryAttributeRelationMapper {
     long countByExample(PmsProductCategoryAttributeRelationExample example);

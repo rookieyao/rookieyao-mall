@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.UmsMemberMemberTagRelation;
 import com.rookieyao.mbg.model.UmsMemberMemberTagRelationExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface UmsMemberMemberTagRelationMapper {
     long countByExample(UmsMemberMemberTagRelationExample example);

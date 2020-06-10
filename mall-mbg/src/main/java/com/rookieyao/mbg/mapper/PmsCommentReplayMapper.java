@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsCommentReplay;
 import com.rookieyao.mbg.model.PmsCommentReplayExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsCommentReplayMapper {
     long countByExample(PmsCommentReplayExample example);

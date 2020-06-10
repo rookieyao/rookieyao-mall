@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsBrand;
 import com.rookieyao.mbg.model.PmsBrandExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsBrandMapper {
     long countByExample(PmsBrandExample example);

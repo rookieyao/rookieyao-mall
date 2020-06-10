@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.OmsOrderSetting;
 import com.rookieyao.mbg.model.OmsOrderSettingExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface OmsOrderSettingMapper {
     long countByExample(OmsOrderSettingExample example);

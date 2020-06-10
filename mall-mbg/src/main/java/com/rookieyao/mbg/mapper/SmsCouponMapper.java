@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.SmsCoupon;
 import com.rookieyao.mbg.model.SmsCouponExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface SmsCouponMapper {
     long countByExample(SmsCouponExample example);

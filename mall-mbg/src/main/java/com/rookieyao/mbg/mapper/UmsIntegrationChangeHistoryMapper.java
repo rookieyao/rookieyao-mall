@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.UmsIntegrationChangeHistory;
 import com.rookieyao.mbg.model.UmsIntegrationChangeHistoryExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface UmsIntegrationChangeHistoryMapper {
     long countByExample(UmsIntegrationChangeHistoryExample example);

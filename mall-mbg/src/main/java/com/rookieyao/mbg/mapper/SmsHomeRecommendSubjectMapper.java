@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.SmsHomeRecommendSubject;
 import com.rookieyao.mbg.model.SmsHomeRecommendSubjectExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface SmsHomeRecommendSubjectMapper {
     long countByExample(SmsHomeRecommendSubjectExample example);

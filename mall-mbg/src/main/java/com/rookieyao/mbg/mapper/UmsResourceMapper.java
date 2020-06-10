@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.UmsResource;
 import com.rookieyao.mbg.model.UmsResourceExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface UmsResourceMapper {
     long countByExample(UmsResourceExample example);

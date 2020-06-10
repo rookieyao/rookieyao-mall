@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsProductVertifyRecord;
 import com.rookieyao.mbg.model.PmsProductVertifyRecordExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsProductVertifyRecordMapper {
     long countByExample(PmsProductVertifyRecordExample example);

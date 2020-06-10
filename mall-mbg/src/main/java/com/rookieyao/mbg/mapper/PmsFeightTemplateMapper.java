@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsFeightTemplate;
 import com.rookieyao.mbg.model.PmsFeightTemplateExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsFeightTemplateMapper {
     long countByExample(PmsFeightTemplateExample example);

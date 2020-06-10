@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.UmsMemberLoginLog;
 import com.rookieyao.mbg.model.UmsMemberLoginLogExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface UmsMemberLoginLogMapper {
     long countByExample(UmsMemberLoginLogExample example);

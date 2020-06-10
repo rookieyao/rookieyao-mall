@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.SmsFlashPromotionProductRelation;
 import com.rookieyao.mbg.model.SmsFlashPromotionProductRelationExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface SmsFlashPromotionProductRelationMapper {
     long countByExample(SmsFlashPromotionProductRelationExample example);

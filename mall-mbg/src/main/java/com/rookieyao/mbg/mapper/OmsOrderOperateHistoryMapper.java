@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.OmsOrderOperateHistory;
 import com.rookieyao.mbg.model.OmsOrderOperateHistoryExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface OmsOrderOperateHistoryMapper {
     long countByExample(OmsOrderOperateHistoryExample example);

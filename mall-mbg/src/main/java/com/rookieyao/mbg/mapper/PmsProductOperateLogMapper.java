@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsProductOperateLog;
 import com.rookieyao.mbg.model.PmsProductOperateLogExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsProductOperateLogMapper {
     long countByExample(PmsProductOperateLogExample example);

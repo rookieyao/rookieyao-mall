@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelation;
 import com.rookieyao.mbg.model.CmsPrefrenceAreaProductRelationExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface CmsPrefrenceAreaProductRelationMapper {
     long countByExample(CmsPrefrenceAreaProductRelationExample example);

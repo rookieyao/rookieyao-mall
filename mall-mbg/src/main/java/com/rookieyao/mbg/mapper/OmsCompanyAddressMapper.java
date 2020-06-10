@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.OmsCompanyAddress;
 import com.rookieyao.mbg.model.OmsCompanyAddressExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface OmsCompanyAddressMapper {
     long countByExample(OmsCompanyAddressExample example);

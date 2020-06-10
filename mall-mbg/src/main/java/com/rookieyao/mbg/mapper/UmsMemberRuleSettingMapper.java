@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.UmsMemberRuleSetting;
 import com.rookieyao.mbg.model.UmsMemberRuleSettingExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface UmsMemberRuleSettingMapper {
     long countByExample(UmsMemberRuleSettingExample example);

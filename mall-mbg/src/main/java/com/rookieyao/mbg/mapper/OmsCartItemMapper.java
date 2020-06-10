@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.OmsCartItem;
 import com.rookieyao.mbg.model.OmsCartItemExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface OmsCartItemMapper {
     long countByExample(OmsCartItemExample example);

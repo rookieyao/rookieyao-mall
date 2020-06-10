@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.UmsAdminPermissionRelation;
 import com.rookieyao.mbg.model.UmsAdminPermissionRelationExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface UmsAdminPermissionRelationMapper {
     long countByExample(UmsAdminPermissionRelationExample example);

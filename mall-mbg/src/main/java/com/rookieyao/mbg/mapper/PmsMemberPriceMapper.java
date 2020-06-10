@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsMemberPrice;
 import com.rookieyao.mbg.model.PmsMemberPriceExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsMemberPriceMapper {
     long countByExample(PmsMemberPriceExample example);

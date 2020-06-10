@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.CmsSubjectProductRelation;
 import com.rookieyao.mbg.model.CmsSubjectProductRelationExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface CmsSubjectProductRelationMapper {
     long countByExample(CmsSubjectProductRelationExample example);

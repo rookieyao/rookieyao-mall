@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.CmsHelpCategory;
 import com.rookieyao.mbg.model.CmsHelpCategoryExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface CmsHelpCategoryMapper {
     long countByExample(CmsHelpCategoryExample example);

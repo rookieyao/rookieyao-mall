@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.CmsTopicCategory;
 import com.rookieyao.mbg.model.CmsTopicCategoryExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface CmsTopicCategoryMapper {
     long countByExample(CmsTopicCategoryExample example);

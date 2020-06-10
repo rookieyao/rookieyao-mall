@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.CmsHelp;
 import com.rookieyao.mbg.model.CmsHelpExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface CmsHelpMapper {
     long countByExample(CmsHelpExample example);

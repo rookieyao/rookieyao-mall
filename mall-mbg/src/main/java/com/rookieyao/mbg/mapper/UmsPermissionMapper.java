@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.UmsPermission;
 import com.rookieyao.mbg.model.UmsPermissionExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface UmsPermissionMapper {
     long countByExample(UmsPermissionExample example);

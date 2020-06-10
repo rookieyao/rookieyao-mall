@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.OmsOrderReturnApply;
 import com.rookieyao.mbg.model.OmsOrderReturnApplyExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface OmsOrderReturnApplyMapper {
     long countByExample(OmsOrderReturnApplyExample example);

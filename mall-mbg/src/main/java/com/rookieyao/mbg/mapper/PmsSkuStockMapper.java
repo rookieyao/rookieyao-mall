@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.PmsSkuStock;
 import com.rookieyao.mbg.model.PmsSkuStockExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface PmsSkuStockMapper {
     long countByExample(PmsSkuStockExample example);

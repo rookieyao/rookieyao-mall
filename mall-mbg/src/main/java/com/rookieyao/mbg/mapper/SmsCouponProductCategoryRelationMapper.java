@@ -2,9 +2,8 @@ package com.rookieyao.mbg.mapper;
 
 import com.rookieyao.mbg.model.SmsCouponProductCategoryRelation;
 import com.rookieyao.mbg.model.SmsCouponProductCategoryRelationExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface SmsCouponProductCategoryRelationMapper {
     long countByExample(SmsCouponProductCategoryRelationExample example);

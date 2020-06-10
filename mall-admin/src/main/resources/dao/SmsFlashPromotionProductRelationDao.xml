@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rookieyao.dao.SmsFlashPromotionProductRelationDao">
+<mapper namespace="com.rookieyao.admin.dao.SmsFlashPromotionProductRelationDao">
     <resultMap id="flashProductMap" type="com.rookieyao.admin.dto.SmsFlashPromotionProduct"
-               extends="com.rookieyao.mapper.SmsFlashPromotionProductRelationMapper.BaseResultMap">
-        <association property="product" resultMap="com.rookieyao.mapper.PmsProductMapper.BaseResultMap"
+               extends="com.rookieyao.mbg.mapper.SmsFlashPromotionProductRelationMapper.BaseResultMap">
+        <association property="product" resultMap="com.rookieyao.mbg.mapper.PmsProductMapper.BaseResultMap"
                      columnPrefix="p_"/>
     </resultMap>
     <select id="getList" resultMap="flashProductMap">

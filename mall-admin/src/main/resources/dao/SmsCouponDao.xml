@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rookieyao.dao.SmsCouponDao">
+<mapper namespace="com.rookieyao.admin.dao.SmsCouponDao">
     <resultMap id="couponItemParam" type="com.rookieyao.admin.dto.SmsCouponParam"
-               extends="com.rookieyao.mapper.SmsCouponMapper.BaseResultMap">
+               extends="com.rookieyao.mbg.mapper.SmsCouponMapper.BaseResultMap">
         <collection property="productRelationList" columnPrefix="cpr_"
-                    resultMap="com.rookieyao.mapper.SmsCouponProductRelationMapper.BaseResultMap">
+                    resultMap="com.rookieyao.mbg.mapper.SmsCouponProductRelationMapper.BaseResultMap">
         </collection>
         <collection property="productCategoryRelationList" columnPrefix="cpcr_"
-                    resultMap="com.rookieyao.mapper.SmsCouponProductCategoryRelationMapper.BaseResultMap">
+                    resultMap="com.rookieyao.mbg.mapper.SmsCouponProductCategoryRelationMapper.BaseResultMap">
         </collection>
     </resultMap>
     <select id="getItem" resultMap="couponItemParam">

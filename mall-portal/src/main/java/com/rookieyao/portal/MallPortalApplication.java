@@ -1,13 +1,13 @@
-package com.rookieyao.mbg;
+package com.rookieyao.portal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MallMbgApplication {
+public class MallPortalApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MallMbgApplication.class, args);
+        SpringApplication.run(MallPortalApplication.class, args);
     }
 
 }

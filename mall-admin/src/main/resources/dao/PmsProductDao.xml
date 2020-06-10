@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rookieyao.dao.PmsProductDao">
+<mapper namespace="com.rookieyao.admin.dao.PmsProductDao">
     <resultMap id="updateInfoMap" type="com.rookieyao.admin.dto.PmsProductResult"
-               extends="com.rookieyao.mapper.PmsProductMapper.ResultMapWithBLOBs">
+               extends="com.rookieyao.mbg.mapper.PmsProductMapper.ResultMapWithBLOBs">
         <result column="cateParentId" jdbcType="BIGINT" property="cateParentId"/>
         <collection property="productLadderList" columnPrefix="ladder_"
-                    resultMap="com.rookieyao.mapper.PmsProductLadderMapper.BaseResultMap">
+                    resultMap="com.rookieyao.mbg.mapper.PmsProductLadderMapper.BaseResultMap">
         </collection>
         <collection property="productFullReductionList" columnPrefix="full_"
-                    resultMap="com.rookieyao.mapper.PmsProductFullReductionMapper.BaseResultMap">
+                    resultMap="com.rookieyao.mbg.mapper.PmsProductFullReductionMapper.BaseResultMap">
         </collection>
         <collection property="memberPriceList" columnPrefix="member_"
-                    resultMap="com.rookieyao.mapper.PmsMemberPriceMapper.BaseResultMap">
+                    resultMap="com.rookieyao.mbg.mapper.PmsMemberPriceMapper.BaseResultMap">
         </collection>
         <collection property="skuStockList" columnPrefix="sku_"
-                    resultMap="com.rookieyao.mapper.PmsSkuStockMapper.BaseResultMap">
+                    resultMap="com.rookieyao.mbg.mapper.PmsSkuStockMapper.BaseResultMap">
         </collection>
         <collection property="productAttributeValueList" columnPrefix="attribute_"
-                    resultMap="com.rookieyao.mapper.PmsProductAttributeValueMapper.BaseResultMap">
+                    resultMap="com.rookieyao.mbg.mapper.PmsProductAttributeValueMapper.BaseResultMap">
         </collection>
         <collection property="subjectProductRelationList" column="{productId=id}"
                     select="selectSubjectProductRelationByProductId"/>
@@ -48,11 +48,11 @@
         WHERE p.id=#{id};
     </select>
     <select id="selectSubjectProductRelationByProductId"
-            resultMap="com.rookieyao.mapper.CmsSubjectProductRelationMapper.BaseResultMap">
+            resultMap="com.rookieyao.mbg.mapper.CmsSubjectProductRelationMapper.BaseResultMap">
         select * from cms_subject_product_relation where product_id=#{productId}
     </select>
     <select id="selectPrefrenceAreaProductRelationByProductId"
-            resultMap="com.rookieyao.mapper.CmsPrefrenceAreaProductRelationMapper.BaseResultMap">
+            resultMap="com.rookieyao.mbg.mapper.CmsPrefrenceAreaProductRelationMapper.BaseResultMap">
         select * from cms_prefrence_area_product_relation where product_id=#{productId}
     </select>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.dao.PmsProductDao">
-    <resultMap id="updateInfoMap" type="com.rookieyao.dto.PmsProductResult"
+    <resultMap id="updateInfoMap" type="com.rookieyao.admin.dto.PmsProductResult"
                extends="com.rookieyao.mapper.PmsProductMapper.ResultMapWithBLOBs">
         <result column="cateParentId" jdbcType="BIGINT" property="cateParentId"/>
         <collection property="productLadderList" columnPrefix="ladder_"

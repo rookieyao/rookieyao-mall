@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.dao.SmsCouponDao">
-    <resultMap id="couponItemParam" type="com.rookieyao.dto.SmsCouponParam"
+    <resultMap id="couponItemParam" type="com.rookieyao.admin.dto.SmsCouponParam"
                extends="com.rookieyao.mapper.SmsCouponMapper.BaseResultMap">
         <collection property="productRelationList" columnPrefix="cpr_"
                     resultMap="com.rookieyao.mapper.SmsCouponProductRelationMapper.BaseResultMap">

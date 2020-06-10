@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rookieyao.dao.OmsOrderDao">
-    <resultMap id="orderDetailResultMap" type="com.rookieyao.dto.OmsOrderDetail"
+    <resultMap id="orderDetailResultMap" type="com.rookieyao.admin.dto.OmsOrderDetail"
                extends="com.rookieyao.mapper.OmsOrderMapper.BaseResultMap">
         <collection property="orderItemList" resultMap="com.rookieyao.mapper.OmsOrderItemMapper.BaseResultMap"
                     columnPrefix="item_"/>

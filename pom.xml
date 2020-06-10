@@ -7,8 +7,6 @@
     <artifactId>mall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>mall</name>
-    <description>rookieyao-mall project for Spring Boot</description>
 
     <modules>
         <module>mall-registry</module>

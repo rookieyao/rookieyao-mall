@@ -1,6 +1,6 @@
 package com.rookieyao.admin.dto;
 
-import com.macro.mall.validator.FlagValidator;
+import com.rookieyao.admin.validator.FlagValidator;
 import io.swagger.annotations.ApiModelProperty;
 
 import javax.validation.constraints.NotEmpty;
